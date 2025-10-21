@@ -1,0 +1,23 @@
+# 忽略 node_modules 資料夾（避免把已安裝套件打包進去，會增加 image 體積）
+
+node_modules
+
+# 忽略 .env 檔案（通常存放密碼或資料庫連線字串等敏感資訊）
+
+.env
+
+# 忽略 npm 的錯誤記錄檔（不需要被打包）
+
+npm-debug.log
+
+# 忽略 Dockerfile（可選，通常只需要給 Docker 用，不要打進去 image 裡）
+
+Dockerfile
+
+# 忽略 .dockerignore 自己本身（可選）
+
+.dockerignore
+
+# 忽略 .git 資料夾（Git 的版本紀錄跟 commit 資訊不該進入 image）
+
+.git
